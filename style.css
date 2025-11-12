@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D4E09B;
+  padding: 10px 40px;
+}
+
+header h1 {
+  font-weight: 700;
+  color: #000;
+  cursor: default; /* para não parecer clicável */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 2.0rem;
+  transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: #444;
+}
+
+#modo-lua {
+  background: none;
+  border: none;
+  font-size: 2.8rem;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s ease;
+  margin-top: -12px; /*O negocio não alinha direito 😠*/
+}
+
+#modo-lua:hover {
+  transform: scale(1.1);
+}
+
+/*CORPO*/
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 100px;
+  min-height: 80vh;
+  column-gap: 5px;
+  background-color: #AEB494;
+}
+
+.texto h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.texto .nome {
+  font-size: 2.6rem;
+  color: #D4E09B;
+  margin: 10px 0;
+}
+
+.texto h3 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.texto p {
+  font-size: 2.1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+.foto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;       
+  object-fit: cover;      
+  box-shadow: 0 0 30px #F0F0F0; 
+  transition: box-shadow 1s ease;
+  transform: scale(2.0);
+}
+/*INICIAL FIM*/
+body{
+    background-color:#AEB494 ;
+}
+.contato-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 80px;
+  font-family: "Konkhmer Sleokchher", sans-serif;
+  background-color: #AEB494;
+  align-items: stretch; 
+  margin: 0 auto; 
+  gap: 20px; 
+    max-width: 1200px; 
+
+}
+
+.form-container, .info-container {
+  background-color: #D4E09B;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.btn-enviar {
+  width: 100%;
+  background-color: #2E2E2E;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #444;
+}
+
+.info-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.0rem;
+}
+
+.info-container p {
+    font-size: 1.9rem;
+  margin: 15px 0;
+  margin: 10px 0;
+}
+
+.info-container a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #D4E09B;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  margin: 15% auto;
+  text-align: center;
+}
+
+.modal-content button {
+  background-color: #2E2E2E;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}/*FIM CONTATO*/
+
+body {
+  margin: 0;
+  background-color: #a8ad8f; /* Fundo igual ao da imagem */
+  font-family: Arial, sans-serif;
+}
+
+.projetos {
+  text-align: center;
+  padding: 50px 0;
+  min-height: 100vh; /* ocupa a tela toda */
+}
+
+.projetos h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projeto-card {
+  background-color: #ceda91;
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.projeto-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
+}
+
+.projeto-card p {
+  margin: 15px 0;
+  font-size: 1rem;
+}
+
+.tecnologias {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.projeto-card button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #6b5b95;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.projeto-card button:hover {
+  background-color: #5a4b80;
+}
+
+@media (max-width: 900px) {
+  .projetos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .projetos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/*Final projetos*/
+body {
+  margin: 0;
+  background-color: #a8ad8f; /* mesma cor dos headers */
+  font-family: "Poppins", sans-serif;
+}
+
+.habilidades-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 4rem;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.habilidades-card {
+  background-color: #d4e091; /* mesma cor dos headers */
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* ===========================
+   🌙 MODO ESCURO
+   =========================== */
+body.dark-mode {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* textos */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode label,
+body.dark-mode span,
+body.dark-mode li {
+  color: #ffffff !important;
+}
+
+/* header e containers com fundo próprio */
+body.dark-mode header,
+body.dark-mode .form-container,
+body.dark-mode .info-container,
+body.dark-mode .projeto-card,
+body.dark-mode .habilidades-card {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+/* botões */
+body.dark-mode .btn-enviar,
+body.dark-mode .projeto-card button {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* botão da lua em modo escuro */
+body.dark-mode #modo-lua {
+  color: #fff;
+}
+
+/*!important me salvou kkkkkk*/
+/*mas não sei o pq não aplcou no restante da pagina so deu em dois*/

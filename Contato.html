@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Mazzeja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+
+    <h1>Gabriel Mazzega</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="habilidades.html">Habilidades</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="Contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <button id="modo-lua" aria-label="Alternar modo escuro">
+      🌙
+    </button>
+
+  </header>
+
+<main class="contato-container">
+  <section class="form-container">
+    <form id="form-contato">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" maxlength="50" required>
+
+      <label for="assunto">Assunto</label>
+      <input type="text" id="assunto" maxlength="30" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" maxlength="200" required></textarea>
+
+      <button type="submit" class="btn-enviar">ENVIAR</button>
+    </form>
+  </section>
+
+  <section class="info-container">
+    <h2>Informações de contato</h2>
+    <p><strong>Email:</strong> gabrielmazzega607@gmail.com</p>
+    <p><strong>Telefone:</strong> (31) 99342-2612</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank">https://github.com/</a></p>
+  </section>
+</main>
+
+<!-- Modal de erro para email -->
+<div id="emailModal" class="modal">
+  <div class="modal-content">
+    <p>Por favor, insira um email válido (ex: nome@dominio.com).</p>
+    <button id="fecharModal">OK</button>
+  </div>
+</div>
+
+
+
+
+
+      <script src="script.js"></script>
+</body>
+</html>
